@@ -21,17 +21,9 @@ const wifiPassword = require('wifi-password');
 
 
 
-app.get('/wifi', (req,res)=>{
-    console.log("the below is pass:")
-    try {
-        wifiPassword().then(password => {
-            console.log(password);
-            //=> 'johndoesecretpassword'
-            res.send(password);
-        });
-    } catch (error) {
-        console.log(error);
-    }
-   
-    }) 
+
+wifiPassword().then(password => {
+    console.log(password);
+});
+
 
