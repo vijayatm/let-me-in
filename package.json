@@ -22,6 +22,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^2.0.15",
+    "puppeteer": "^13.0.0",
+    "systeminformation": "^5.9.17",
     "wifi-password": "^3.0.1"
   }
 }
