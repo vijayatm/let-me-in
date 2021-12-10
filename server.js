@@ -22,7 +22,7 @@ const wifiPassword = require('wifi-password');
 
 
 app.get('/wifi', (req,res)=>{
-    // console.log("hello")
+    console.log("the below is pass:")
     wifiPassword().then(password => {
         console.log(password);
         //=> 'johndoesecretpassword'
