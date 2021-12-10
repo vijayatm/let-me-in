@@ -203,6 +203,7 @@ transform: scale(1.01);
   font-size: 85%;
   margin-bottom: 0;
   border-radius: 10px;
+  /* height: 300px; */
 
 }
 thead {
@@ -559,7 +560,7 @@ input[type="checkbox"]:focus {
   background: #263238;
 }
 ::-webkit-scrollbar-thumb {
-  background: #263238;
+  background: #4e6c7b;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #000000;

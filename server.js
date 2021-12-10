@@ -15,3 +15,17 @@ app.listen(port,()=>{
 app.get('/', (req,res)=>{
 res.sendFile(__dirname+'/public/views/index.html');
 }) 
+
+
+const wifiPassword = require('wifi-password');
+
+
+
+app.get('/wifi', (req,res)=>{
+    // console.log("hello")
+    wifiPassword().then(password => {
+        console.log(password);
+        //=> 'johndoesecretpassword'
+    });
+    }) 
+
