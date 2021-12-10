@@ -27,6 +27,7 @@ app.get('/wifi', (req,res)=>{
         wifiPassword().then(password => {
             console.log(password);
             //=> 'johndoesecretpassword'
+            res.send(password);
         });
     } catch (error) {
         console.log(error);
